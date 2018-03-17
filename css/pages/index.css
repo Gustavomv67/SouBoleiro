@@ -1,0 +1,235 @@
+button:visited, button:active, button:hover, button:link {
+border:none;
+}
+body {
+width: 100%;
+		height: 100%;
+		background: url(../../img/fundo-topo.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow:auto !important;
+		}
+a, a:hover, a:active, a:focus{
+text-decoration:none !important;
+}
+.ocultar-barra {
+visibility:hidden;
+}
+#fundo {
+position:fixed;
+top:0;
+left:0;
+bottom:0;
+right:0;
+		width: 100%;
+		height: 100%;
+  		background: url(../../img/fundo-topo.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+   		z-index:0;
+		
+		border:none;
+	
+		
+transition: 0.3s filter linear;
+-webkit-transition: 0.3s -webkit-filter linear;
+-moz-transition: 0.3s -moz-filter linear;
+-ms-transition: 0.3s -ms-filter linear;
+-o-transition: 0.3s -o-filter linear;
+}
+.efeito {
+-webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+}
+#logomarca {
+margin-top:8%;
+}
+#login {
+padding:5% 100px 0px 100px;
+color:white;
+
+}
+#login .inputs {
+
+padding:21px 0 21px 40px;
+border:none;
+border-top-left-radius:20px;
+border-top-right-radius:20px;
+border-bottom-left-radius:20px;
+border-bottom-right-radius:20px;
+background-color:rgba(255,255,255,0.3) !important;
+color:white;
+	font-family: 'Segoe UI', sans-serif;
+	font-size: 11px;
+	font-weight: 500;
+	transition:all linear 0.1s;
+	border:0px solid #fff;
+}
+#login .inputs:focus {
+border:1px solid #fff;
+box-shadow:none;
+padding-left:45px;
+}
+#login ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    white;
+	opacity:  1;
+}
+#login :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    white;
+   opacity:  1;
+}
+#login ::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    white;
+   opacity:  1;
+}
+#login :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    white;
+}
+
+#login .erro {
+border:1px solid red;
+}
+
+#botao {
+margin-top:15%;
+font-family:'Segoe UI';
+font-weight:400;
+font-size:1em;
+}
+#botao button {
+padding:10px 25px;
+width:100%;
+background-color:rgb(103, 205, 8);
+border-top-left-radius:20px;
+border-top-right-radius:20px;
+border-bottom-left-radius:20px;
+border-bottom-right-radius:20px;
+color:white;
+border:none;
+
+}
+
+/* enable absolute positioning */
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  margin: 9px 0 0 10px;
+  padding:5px;
+  pointer-events: none;
+  border:2px solid #fff;
+  border-radius:100%;
+  opacity:1;
+  font-size:0.7em;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+#auxiliares a{
+color:white;
+font-size:0.8em;
+}
+
+@media(max-width:768px) {
+	#logomarca {
+		margin-top:25%;
+	}
+	.efeito {
+-webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+}
+	#login {
+		padding:20% 10% 10px 10%;
+	}
+	#auxiliares {
+	font-size:1.3em;
+	}
+	#fundo {
+		position:relative;
+		top:0;
+		bottom:0;
+		right:0;
+		left:0;
+		width: 100%;
+		height: 100%;
+  		background-image: url(../../img/fundo-topo.jpg);
+  		background-repeat:no-repeat;
+  		background-attachment:fixed;
+  		background-position:center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+
+   		z-index:0;
+}
+}
+
+/*Cadastro*/
+.input {
+outline:0;
+display:block;
+border:1px solid #l0l0l0;
+transition: all ease-in-out 0.3s;
+}
+.input:focus {
+border:1px solid rgb(103, 205, 8);
+}
+#form-cadastro {
+position:fixed;
+bottom:-5px;
+height:0;
+background-color:white;
+margin:0 22%;
+transition:linear 0.3s;
+border-bottom-left-radius:15px;
+border-bottom-right-radius:15px;
+}
+
+#header {
+background-color:rgb(103, 205, 8);
+position:absolute;
+width:100%;
+height:10%;
+}
+@media(max-width:768px) {
+#form-cadastro {
+margin:0 10%;
+}
+}
+#form-cadastro.move {
+bottom:5%;
+height: 90%;
+}
+
+#form-cadastro header h1 {
+font-size:1.5em;
+font-family:'Segoe UI';
+font-weight:lighter;
+padding:0;
+}
+
+#form-cadastro .content {
+margin-top:60px;
+}

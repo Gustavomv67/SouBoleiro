@@ -1,0 +1,85 @@
+#topo {
+height:50px;
+width:100%;
+margin-top:-20px;
+position:relative;
+background-color:#67CD08;
+padding:0;
+}
+#topo h1 {
+padding-top:12px;
+padding-left:15px;
+font-size:1.8em;
+color:white;
+font-family:'Segoe UI';
+font-weight:lighter;
+}
+.imagem-responsiva{
+width:100%;
+background-image:url(../../img/grama.jpg);
+background-repeat:no-repeat;
+background-size:cover;
+padding:15%;
+}
+#img-perfil {
+height:100%;
+width:95%;
+max-height:150px;
+border-radius:100%;
+border:5px solid #fff;
+background-size:cover;
+background-position:center center;
+}	
+.sidebar-nav {
+margin-top:15px;
+}
+body {
+height:100%;
+}
+
+.removeOverflow {
+overflow-y:hidden !important;
+}
+
+#menu-toggle {
+display:none;
+
+}
+
+@media(max-width:768px) {
+
+	.overflow {
+	overflow:visible !important;
+	}
+	#menu-toggle {
+	display:inline;
+	float:left;
+	z-index:999;
+	margin-right:13px;
+	}
+	#topo {
+	margin-top:0;
+	padding:8px 0 0 10px;
+	left:0;
+	}
+	#topo h1 {
+	font-size:1.2em;
+	margin-top:0;
+	padding-top:8px;
+	}
+	#sidebar-wrapper {
+	 box-shadow:1px 1px 10px 0px #333;
+	}
+	
+}
+#sidebar-wrapper {
+ background-color:#fafafa;
+  box-shadow:0px 0px 1px 0px #333;
+}
+#corpo {
+padding:0;
+}
+#blocos {
+border:1px solid #fafafa;
+border-radius:1px;
+}
